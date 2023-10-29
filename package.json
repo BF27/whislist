@@ -57,6 +57,9 @@
 	"type": "module",
 	"dependencies": {
 		"@auth/core": "^0.18.0",
-		"@auth/sveltekit": "^0.3.11"
+		"@auth/supabase-adapter": "^0.1.6",
+		"@auth/sveltekit": "^0.3.11",
+		"@supabase/supabase-js": "^2.38.4",
+		"jsonwebtoken": "^9.0.2"
 	}
 }
