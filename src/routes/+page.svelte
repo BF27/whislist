@@ -5,7 +5,7 @@
 </script>
 
 {#if $page.data.session?.user}
-	<p>Hello {$page.data.session.user.email}</p>
+	<p>Hello {$page.data.session.user.name}</p>
 	<Button text={'SignOut'} bgColor={'accent'} handler={() => signOut()}>Sign out</Button>
 {:else}
 	<p>You are not signed in</p>
