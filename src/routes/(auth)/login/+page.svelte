@@ -2,6 +2,7 @@
 	import Button from '$lib/components/button.svelte';
 	import LoginForm from './components/loginForm.svelte';
 	import { signIn } from '@auth/sveltekit/client';
+
 </script>
 
 <div class="flex flex-col gap-4 border-2 outline-2 rounded-lg border-black shadow-box p-4 bg-white">

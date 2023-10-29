@@ -4,5 +4,6 @@ import type { PageServerLoad } from "./$types.ts"
 export const load: PageServerLoad = async (event) => {
   const session = await event.locals.getSession()
   if (session?.user) throw redirect(303, "/")
-  return {}
+  return {
+    }
 }

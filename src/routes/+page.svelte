@@ -2,6 +2,8 @@
 	import Button from '$lib/components/button.svelte';
 	import { signOut } from '@auth/sveltekit/client';
 	import { page } from '$app/stores';
+	export let data;
+	console.log(data)
 </script>
 
 {#if $page.data.session?.user}
