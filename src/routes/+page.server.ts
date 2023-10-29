@@ -4,10 +4,10 @@ import { supabase } from '$lib/supabaseClient.js';
 
 export const load: PageServerLoad = async (event) => {
 	const session = await event.locals.getSession();
-	const { data, error } = await supabase.from('users').select();
+	const { data} = await supabase.from('countries').select();
 	if (!session?.user) throw redirect(303, '/login');
 	return {
-		error: error ?? [],
+		//error: error ?? [],
 		userData: data ?? []
 	};
 };
