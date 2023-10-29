@@ -19,5 +19,6 @@
 	<div class="flex justify-between">
 		<Button text={'GitHub'} bgColor={'primary'} handler={() => signIn('github')} />
 		<Button text={'Google'} bgColor={'primary'} handler={() => signIn('google')} />
+		<Button text={'TikTok'} bgColor={'primary'} handler={() => signIn('tiktok')} />
 	</div>
 </div>
