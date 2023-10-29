@@ -26,7 +26,8 @@ export const handle = SvelteKitAuth({
 		}),
 		Tiktok({
 			clientId: TIKTOK_CLIENT_KEY,
-			clientSecret: TIKTOK_CLIENT_SECRET
+			clientSecret: TIKTOK_CLIENT_SECRET,
+			issuer: 'farkas.bence27@gmail.com'
 		})
 	],
 	adapter: SupabaseAdapter({
